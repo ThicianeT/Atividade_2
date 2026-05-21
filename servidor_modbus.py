@@ -32,8 +32,6 @@ class ServidorMODBUS():
                 sleep(1)
         except Exception as e:
             print("Erro: ",e.args)
-
-
-
-    
-
+if __name__ == '__main__':
+    s = ServidorMODBUS('localhost', 502)
+    s.run()
